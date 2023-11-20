@@ -1,15 +1,19 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 
 import './globals.css'
 import Header from '@/components/header'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const poppins = Poppins({
+  subsets: ['latin'],
+  variable: '--font-poppins',
+  weight: '400'
+})
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Context',
-    default: 'Context'
+    template: '%s | instor',
+    default: 'instor'
   },
   description: 'A definir'
 }
@@ -20,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html className={inter.variable} lang="pt-BR">
+    <html className={poppins.variable} lang="pt-BR">
       <body className="w-full h-full antialiased">
         <Header />
         {children}
