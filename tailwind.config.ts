@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-inter)']
+        sans: ['var(--font-poppins)']
       },
       height: {
         's-m-header-desktop': 'calc(100vh - 73px)',
