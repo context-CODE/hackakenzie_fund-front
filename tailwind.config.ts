@@ -12,12 +12,12 @@ const config: Config = {
         sans: ['var(--font-poppins)']
       },
       height: {
-        's-m-header-desktop': 'calc(100vh - 73px)',
-        's-m-header-mobile': 'calc(100vh - 89px)'
+        's-m-header-desktop': 'calc(100vh - 97px)',
+        's-m-header-mobile': 'calc(100vh - 112px)'
       },
       margin: {
-        'm-m-header-desktop': '73px',
-        'm-m-header-mobile': '89px'
+        'm-m-header-desktop': '97px',
+        'm-m-header-mobile': '112px'
       }
     },
     screens: {
