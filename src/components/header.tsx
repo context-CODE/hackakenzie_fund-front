@@ -7,16 +7,19 @@ import { OrangeButton, SolidButton } from './button'
 
 export default function Header() {
   return (
-    <div className="fixed top-0 left-0 z-50 flex items-center justify-center min-w-full border-b mb-12 border-gray-50 bg-white ">
+    <div className="fixed top-0 left-0 z-50 max-h-[97px] sm:max-h-[112px] flex items-center justify-center min-w-full border-b mb-12 border-gray-50 bg-white ">
       <div className="mx-auto w-full max-w-7xl flex items-center gap-8 p-6 sm:px-4 sm:py-8">
-        <Link href="/">
+        <Link
+          href="/"
+          className="overflow-hidden flex items-center justify-center max-h-[48px]"
+        >
           <Image
-            className="w-[105px] h-[42px]"
+            className="w-auto h-[63px]"
             src={'/Variant=Dark.svg'}
             alt=""
             width={210}
             height={84}
-            quality={100}
+            quality={120}
           />
         </Link>
         <div className="w-full h-12 p-3 rounded-lg border-2 border-black border-opacity-20 justify-start items-center gap-4 inline-flex">
