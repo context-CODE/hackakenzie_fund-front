@@ -11,10 +11,10 @@ export default function Header() {
       <div className="mx-auto w-full max-w-7xl flex items-center gap-8 p-6 sm:px-4 sm:py-8">
         <Link
           href="/"
-          className="overflow-hidden flex items-center justify-center max-h-[48px]"
+          className="flex items-center justify-center max-h-[48px]"
         >
           <Image
-            className="w-auto h-[63px]"
+            className="w-auto min-w-[104px] h-[63px]"
             src={'/Variant=Dark.svg'}
             alt=""
             width={210}
