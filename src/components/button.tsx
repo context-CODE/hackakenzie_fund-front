@@ -47,7 +47,9 @@ export const SolidButton = ({
 }: CustomButtonProps) => {
   return (
     <Button
-      className={`bg-black text-white ${Size === 'sm' ? sm : md} ${className}`}
+      className={`bg-slate-800 hover:bg-slate-700 text-white ${
+        Size === 'sm' ? sm : md
+      } ${className}`}
     >
       {children}
     </Button>
@@ -77,7 +79,7 @@ export const OrangeButton = ({
 }: CustomButtonProps) => {
   return (
     <Button
-      className={`bg-orange-400 bg-opacity-25 text-orange-400 ${
+      className={`bg-orange-100 hover:bg-orange-200 text-orange-400 ${
         Size === 'sm' ? sm : md
       }  ${className}`}
     >
