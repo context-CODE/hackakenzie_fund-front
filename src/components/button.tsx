@@ -1,12 +1,14 @@
-import React from 'react'
+'use client'
+
+import { ReactNode } from 'react'
 
 interface ButtonProps {
-  children: React.ReactNode
+  children: ReactNode
   className?: string
 }
 
 interface CustomButtonProps {
-  children: React.ReactNode
+  children: ReactNode
   Size?: 'sm' | 'md'
   className?: string
 }
@@ -14,7 +16,7 @@ interface CustomButtonProps {
 const sm = 'h-8 p-1 min-w-[32px]'
 const md = 'h-12 p-3 min-w-[48px]'
 
-const Button = ({ children, className = '' }: Readonly<ButtonProps>) => {
+const Button = ({ children, className = '' }: ButtonProps) => {
   return (
     <button
       className={`rounded-lg justify-center items-center gap-2 inline-flex text-center text-base font-semibold ${className}`}
