@@ -11,7 +11,7 @@ export default function Header() {
       <div className="mx-auto w-full max-w-7xl flex items-center gap-8 p-6 sm:px-4 sm:py-8">
         <Link
           href="/"
-          className="flex items-center justify-center max-h-[48px]"
+          className="flex items-center justify-center max-h-[48px] max-w-[104px]"
         >
           <Image
             className="w-auto min-w-[104px] h-[63px]"
@@ -22,14 +22,14 @@ export default function Header() {
             quality={120}
           />
         </Link>
-        <div className="w-full h-12 p-3 rounded-lg border-2 border-black border-opacity-20 justify-start items-center gap-4 inline-flex">
+        <div className="sm:hidden w-full h-12 p-3 rounded-lg border-2 border-black border-opacity-20 justify-start items-center gap-4 inline-flex">
           <IoSearch className="text-2xl text-gray-400" />
           <input
             className="w-full h-full text-gray-400 text-lg font-medium bg-transparent outline-none"
             placeholder="Pesquisar"
           />
         </div>
-        <div className="flex min-w-fit gap-2">
+        <div className="sm:hidden flex min-w-fit gap-2">
           <OrangeButton>
             <PiShoppingCartSimpleFill className="w-6 h-6" />
             Cart

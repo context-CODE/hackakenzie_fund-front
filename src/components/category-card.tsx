@@ -1,13 +1,17 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export function CategoryCard() {
   return (
-    <div className="relative min-w-[373.33px] w-[373.33px] h-[184px] rounded-2xl sm:min-w-[150px] sm:w-[150px] sm:h-[75px] flex-col justify-center items-start inline-flex overflow-hidden">
+    <Link
+      href={'/categoria/cadeiras'}
+      className="relative min-w-[373.33px] w-[373.33px] h-[184px] rounded-2xl sm:min-w-[150px] sm:w-[150px] sm:h-[75px] flex-col justify-center items-start inline-flex overflow-hidden"
+    >
       <Image
         src={'/temp/category-images/Lounge-Chair-Ottoman-Mahogany.png'}
         alt=""
-        width={373.33}
-        height={184}
+        layout="fill"
+        objectFit="cover"
         quality={100}
       ></Image>
       <h4
@@ -16,6 +20,6 @@ export function CategoryCard() {
       >
         Cadeiras
       </h4>
-    </div>
+    </Link>
   )
 }

@@ -6,8 +6,8 @@ import { OrangeButton } from './button'
 
 export function ProductCard() {
   return (
-    <div className="min-w-[280px] w-[280px] sm:min-w-[171px] sm:w-[171px] bg-zinc-100 rounded-2xl relative">
-      <Link href="/test" className="w-full h-full">
+    <div className="min-w-[276px] w-[276px] sm:min-w-[171px] sm:w-[171px] bg-zinc-100 rounded-2xl relative">
+      <Link href="/produto/id" className="w-full h-full">
         <figure className="w-full h-[276px] sm:h-[171px] rounded-2xl overflow-hidden">
           <Image
             src={'/temp/product-images/8b3d6a315f1658f889f7634bd028ea9d.png'}
