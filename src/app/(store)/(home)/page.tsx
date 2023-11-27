@@ -11,6 +11,31 @@ export default function Home() {
   return (
     <ContainerApp>
       <ContainerBanner>
+        <div className="min-h-[376.4px] sm:min-h-[158px] w-auto min-w-[358px] relative overflow-hidden rounded-2xl">
+          <Link href={'/'} className="">
+            <Image
+              src={'/temp/banners/banner-principal-01.png'}
+              alt=""
+              layout="fill"
+              objectFit="cover"
+              quality={100}
+            ></Image>
+            <div className="absolute h-full flex-col justify-center items-start inline-flex left-6 sm:left-4">
+              <p className="text-black text-2xl font-semibold">
+                Sofás Linha Premium
+              </p>
+              <p className="text-black text-5xl font-bold leading-[72px] sm:text-2xl sm:leading-9">
+                30% off
+              </p>
+              <p className="text-right text-black text-base font-normal">
+                Saiba mais{' '}
+                <IoIosArrowRoundForward className={'inline-block w-6 h-6'} />
+              </p>
+            </div>
+          </Link>
+        </div>
+      </ContainerBanner>
+      <ContainerBanner>
         <div>
           <h3 className="text-black text-2xl sm:text-xl font-semibold">
             Categorias
