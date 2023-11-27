@@ -18,7 +18,7 @@ export function CategoryCard() {
         className="text-white text-xl sm:text-base font-semibold absolute left-6 sm:left-4"
         style={{ textShadow: '0 0 4px rgba(0, 0, 0, 1)' }}
       >
-        Cadeiras
+        Poltronas
       </h4>
     </Link>
   )

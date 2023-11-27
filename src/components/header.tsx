@@ -8,7 +8,7 @@ import { OrangeButton, SolidButton } from './button'
 export default function Header() {
   return (
     <div className="fixed top-0 left-0 z-50 max-h-[97px] sm:max-h-[112px] flex items-center justify-center min-w-full border-b mb-12 border-gray-50 bg-white ">
-      <div className="mx-auto w-full max-w-7xl flex items-center gap-8 p-6 sm:px-4 sm:py-8">
+      <div className="mx-auto w-full max-w-7xl flex items-center gap-8 p-6 sm:px-4 sm:py-8 sm:justify-between">
         <Link
           href="/"
           className="flex items-center justify-center max-h-[48px] max-w-[104px]"
@@ -29,12 +29,12 @@ export default function Header() {
             placeholder="Pesquisar"
           />
         </div>
-        <div className="sm:hidden flex min-w-fit gap-2">
+        <div className="flex min-w-fit gap-2">
           <OrangeButton>
             <PiShoppingCartSimpleFill className="w-6 h-6" />
             Cart
           </OrangeButton>
-          <SolidButton>Log In/Sign Up</SolidButton>
+          <SolidButton className="sm:hidden">Log In/Sign Up</SolidButton>
         </div>
       </div>
     </div>
