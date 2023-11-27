@@ -3,9 +3,5 @@ export default function StoreLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  return (
-    <div className="w-full h-s-m-header-desktop sm:h-s-m-header-mobile mt-m-m-header-desktop sm:mt-m-m-header-mobile">
-      {children}
-    </div>
-  )
+  return <div className="w-full">{children}</div>
 }

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 
 import './globals.css'
+import Footer from '@/components/footer'
 import Header from '@/components/header'
 
 const poppins = Poppins({
@@ -25,9 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html className={poppins.variable} lang="pt-BR">
-      <body className="w-full h-full bg-white antialiased">
+      <body className="w-full h-full bg-white antialiased flex flex-col">
         <Header />
-        {children}
+        <main className="flex-grow pt-[97px] sm:pt-[112px]">{children}</main>
+        <Footer />
       </body>
     </html>
   )
