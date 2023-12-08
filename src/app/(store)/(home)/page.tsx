@@ -98,6 +98,21 @@ export default function Home() {
           </div>
         </Link>
       </ContainerBanner>
+      <ContainerBanner>
+        <div className="flex flex-col">
+          <h3 className="text-black text-2xl sm:text-xl font-semibold">
+            Espaços
+          </h3>
+          <p className="text-neutral-400 text-base font-normal">
+            Móveis para todos os cantos da sua casa
+          </p>
+        </div>
+        <div className="flex gap-4 w-full max-w-7xl items-center overflow-x-hidden">
+          <div className="w-[276px] h-[396px] sm:w-[180px] sm:h-[270px] rounded-2xl inline-flex bg-red-200">
+            Teste
+          </div>
+        </div>
+      </ContainerBanner>
     </ContainerApp>
   )
 }
